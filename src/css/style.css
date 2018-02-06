@@ -1,2 +1,43 @@
-body {
-  background: blue; }
+.navbar {
+  width: 100%;
+  background: none !important; }
+  @media (max-width: 34em) {
+    .navbar {
+      background: black !important; } }
+  .navbar .navbar-toggler {
+    cursor: pointer;
+    outline: 0; }
+  .navbar .nav-link {
+    text-transform: uppercase; }
+  .navbar .nav-item {
+    padding: 0 1rem; }
+    @media (max-width: 34em) {
+      .navbar .nav-item {
+        padding: 0; } }
+    @media (max-width: 34em) {
+      .navbar .nav-item .nav-link {
+        color: white !important; } }
+
+.top-bar {
+  width: 100%; }
+  .top-bar .languages {
+    float: right;
+    margin: 0;
+    margin-left: 30px;
+    list-style: none; }
+    .top-bar .languages li {
+      display: inline; }
+    .top-bar .languages li.nonactive img {
+      filter: grayscale(100%); }
+    .top-bar .languages a:hover {
+      text-decoration: none; }
+    .top-bar .languages img {
+      width: 32px;
+      padding-right: 10px;
+      margin-top: 8px; }
+  .top-bar .tip,
+  .top-bar .phone {
+    float: right;
+    margin-top: 8px; }
+  .top-bar .tip {
+    text-transform: uppercase; }

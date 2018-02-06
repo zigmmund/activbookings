@@ -5,15 +5,373 @@
     <meta http-equiv="x-ua-compatible" content="ie-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="https://maxcdn.bootsrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/style.css">
   </head>
 
   <body>
-    <script src="/js/jquery/min.js"></script>
-    <script src="/js/tether.min.js"></script>
-    <script src="/js/bootstrap/min.js"></script>
 
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="top-bar">
+
+            <ul class="languages">
+              <li class="nonactive">
+                <a id="pt-flag" title="Portuguese" href="/pt/">
+                  <img src="assets/pt.png" alt="PT">
+                </a>
+              </li>
+              <li class="active">
+                <a id="en-flag" title="English" href="/en/">
+                  <img src="assets/en.png" alt="EN">
+                </a>
+              </li>
+              <li class="nonactive">
+                <a id="es-flag" title="Spanise" href="/es/">
+                  <img src="assets/es.png" alt="ES">
+                </a>
+              </li>
+            </ul>
+
+            <a class="phone"href="#">(+351)000 000 000</a>
+            <span class="tip">Need help? Contact us:&nbsp;</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <nav class="navbar navbar-expand-lg">
+
+            <a href="#" class="navbar-brand" id="logo">Bluefleet</a>
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Experiences
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Grotto Trips</a>
+                    <a class="dropdown-item" href="#">Coast Trip</a>
+                    <a class="dropdown-item" href="#">Blue Kayaking</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Locations</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Contacts</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div id="hero">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-md-auto ">
+            <h1 class="hero__title">Quis Nostrud Exerci Tation</h1>
+            <h2 class="hero__subtitle">Ut wisi enim ad minim veniam</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <form id="bsf">
+              <div class="row justify-content-md-center">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label for="bsf-location">Location</label>
+                    <select class="form-control" name="location" id="bsf-location">
+                      <option value="">Albufeira</option>
+                      <option value="">Faro</option>
+                      <option value="">Lagos</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label for="bsf-experience">Experience</label>
+                    <select class="form-control" name="experience" id="bsf-experience">
+                      <option value="">Grotto Trips</option>
+                      <option value="">Coast Trip</option>
+                      <option value="">Blue Kayaking</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="form-group">
+                    <label for="bsf-checkin">Date</label>
+                    <input type="text" class="form-control" id="bsf-checkin" readonly>
+                  </div>
+                </div>
+                <div class="col-md-2 align-self-center">
+
+                  <input type="submit" value="Search" class="btn btn-primary">
+
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="experience">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-auto">
+            <h3>Experiences</h3>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-sm-6 col-12">
+            <img src="" alt="">
+            <h4>grotto trips</h4>
+            <div class="rating"></div>
+            <div class="description">
+              Duis autem vel eum iriure dolor in hendrerit in dulpurato velit esse molestie consequat, vel illum dolore eu feugiat nulla facillisis at vero.
+            </div>
+            <div class="tags">
+              <ul class="tagline">
+                <li><a href="#">Grotto</a></li>
+                <li><a href="#">Sea</a></li>
+                <li><a href="#">Sun</a></li>
+                <li><a href="#">Fun</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-12">
+            <img src="" alt="">
+            <h4>coast trip</h4>
+            <div class="rating"></div>
+            <div class="description">
+              Duis autem vel eum iriure dolor in hendrerit in dulpurato velit esse molestie consequat, vel illum dolore eu feugiat nulla facillisis at vero.
+            </div>
+            <div class="tags">
+              <ul class="tagline">
+                <li><a href="#">Grotto</a></li>
+                <li><a href="#">Sea</a></li>
+                <li><a href="#">Sun</a></li>
+                <li><a href="#">Fun</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-12">
+            <img src="" alt="">
+            <h4>blue kayaking</h4>
+            <div class="rating"></div>
+            <div class="description">
+              Duis autem vel eum iriure dolor in hendrerit in dulpurato velit esse molestie consequat, vel illum dolore eu feugiat nulla facillisis at vero.
+            </div>
+            <div class="tags">
+              <ul class="tagline">
+                <li><a href="#">Grotto</a></li>
+                <li><a href="#">Sea</a></li>
+                <li><a href="#">Sun</a></li>
+                <li><a href="#">Fun</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-auto">
+            <h3>About us</h3>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3 col-sm-6 col-12">
+            <img src="" alt="">
+            <h5>Autem vel eum iriure dolor in</h5>
+            <p>Eum iriure dolor in hendrerit in vulputate velit esse moleste consequat, vel illum dolore eu feugiat.</p>
+          </div>
+          <div class="col-md-3 col-sm-6 col-12">
+            <img src="" alt="">
+            <h5>accumsan et iusto odio dignissim qui</h5>
+            <p>Eum iriure dolor in hendrerit in vulputate velit esse moleste consequat, vel illum dolore eu feugiat.</p>
+          </div>
+          <div class="col-md-3 col-sm-6 col-12">
+            <img src="" alt="">
+            <h5>wisi enim ad minim veniam</h5>
+            <p>Eum iriure dolor in hendrerit in vulputate velit esse moleste consequat, vel illum dolore eu feugiat.</p>
+          </div>
+          <div class="col-md-3 col-sm-6 col-12">
+            <img src="" alt="">
+            <h5>exerci tation ullamcorper suscipit</h5>
+            <p>Eum iriure dolor in hendrerit in vulputate velit esse moleste consequat, vel illum dolore eu feugiat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="locations">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-auto">
+            <h3>Locations</h3>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-sm-6 col-12">
+            <a href="#"><img src="" alt=""></a>
+            <div class="location-caption">
+              <h5>carvoeiro</h5>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-12">
+            <a href="#"><img src="" alt=""></a>
+            <div class="location-caption">
+              <h5>algar de benagil</h5>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-12">
+            <a href="#"><img src="" alt=""></a>
+            <div class="location-caption">
+              <h5>praia de senhora da rocha</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="feedback">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-auto">
+            <h3>What clients say</h3>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row justify-content-center">
+                    <div class="col-10 col-sm-8 col-md-6">
+                      <p><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, nesciunt alias. Repudiandae mollitia itaque optio, adipisci maiores, autem magni officiis eum. Pariatur dolor corporis doloribus, qui esse excepturi nisi quam.</q></p>
+                      <b>Taribo West</b>
+                      <span>(client)</span>
+                      <img src="http://halalfoodexpress.com/wp-content/uploads/2016/12/tripadvisor.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-center">
+                    <div class="col-10 col-sm-8 col-md-6">
+                      <p><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, nesciunt alias. Repudiandae mollitia itaque optio, adipisci maiores, autem magni officiis eum. Pariatur dolor corporis doloribus, qui esse excepturi nisi quam.</q></p>
+                      <b>Taribo West</b>
+                      <span>(client)</span>
+                      <img src="http://halalfoodexpress.com/wp-content/uploads/2016/12/tripadvisor.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-center">
+                    <div class="col-10 col-sm-8 col-md-6">
+                      <p><q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, nesciunt alias. Repudiandae mollitia itaque optio, adipisci maiores, autem magni officiis eum. Pariatur dolor corporis doloribus, qui esse excepturi nisi quam.</q></p>
+                      <b>Taribo West</b>
+                      <span>(client)</span>
+                      <img src="http://halalfoodexpress.com/wp-content/uploads/2016/12/tripadvisor.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="location">
+      <img src="assets/map-copy.jpg" alt="">
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-2 col-sm-3 col-12">
+            <h6>experiences</h6>
+            <ul>
+              <li><a href="#">Cruzeiro Pela Costa</a></li>
+              <li><a href="#">Passeio de Caiaque</a></li>
+              <li><a href="#">Jet Ski Experience</a></li>
+              <li><a href="#">Grutas Experience</a></li>
+              <li><a href="#">Caca ao Golfinho</a></li>
+              <li><a href="#">Piquenique com os Tubaroes</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-sm-3 col-12">
+            <h6>locations</h6>
+            <ul>
+              <li><a href="#">Carvoeiro</a></li>
+              <li><a href="#">Algar de Benagil</a></li>
+              <li><a href="#">Praia de Senhora da Rocha</a></li>
+              <li><a href="#">Ferragudo</a></li>
+              <li><a href="#">praia de Marina</a></li>
+              <li><a href="#">Praia Dona Anna</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-sm-3 col-12">
+            <h6>customer area</h6>
+            <ul>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Notifications</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 col-sm-3 col-12">
+            <h6>contacts</h6>
+            <ul>
+              <li>(+351)000 000 000</li>
+              <li>taribowest@twest.com</li>
+              <li>Avenida do Doutor, n<sup>o</sup>00-0<sup>o</sup> 0000-000 Olhao</li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-sm-12 col-12">
+            <h6>follow us</h6>
+            <ul>
+              <li><a href="">fb</a></li>
+              <li><a href="">tw</a></li>
+              <li><a href="">g+</a></li>
+              <li><a href="">in</a></li>
+              <li><a href="">yt</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.raty.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
