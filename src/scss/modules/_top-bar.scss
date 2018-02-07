@@ -1,0 +1,59 @@
+.top-bar {
+
+  width: 100%;
+  border-bottom: 1px solid #f0f0f0;
+
+  .languages {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+
+
+    li {
+      display: inline-block;
+    }
+
+    li.nonactive {
+      img {
+        filter: grayscale(100%);
+      }
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    img {
+      width: 32px;
+      padding-right: 10px;
+      margin-top: 8px;
+    }
+  }
+
+  .tip,
+  .phone,
+  .separator {
+    margin-top: 8px;
+    text-transform: uppercase;
+    font-size: .75rem;
+    font-weight: $font-medium;
+  }
+
+  .separator {
+    color: #b4b4b4;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .phone {
+    color: #7a7a7a;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .tip {
+    text-transform: uppercase;
+    color: #23669c;
+  }
+}

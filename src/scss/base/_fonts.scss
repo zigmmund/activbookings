@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'soho-gothic-pro';
+  src: url('../fonts/SohoStdRegular/SohoStdRegular.woff2') format('woff2'),
+       url('../fonts/SohoStdRegular/SohoStdRegular.woff') format('woff'),
+       url('../fonts/SohoStdRegular/SohoStdRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'soho-gothic-pro';
+  src: url('../fonts/SohoGothicProThin/SohoGothicProThin.woff2') format('woff2'),
+       url('../fonts/SohoGothicProThin/SohoGothicProThin.woff') format('woff'),
+       url('../fonts/SohoGothicProThin/SohoGothicProThin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'soho-gothic-pro';
+  src: url('../fonts/SohoGothicProLight/SohoGothicProLight.woff2') format('woff2'),
+       url('../fonts/SohoGothicProLight/SohoGothicProLight.woff') format('woff'),
+       url('../fonts/SohoGothicProLight/SohoGothicProLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'soho-gothic-pro';
+  src: url('../fonts/SohoGothicProMedium/SohoGothicProMedium.woff2') format('woff2'),
+       url('../fonts/SohoGothicProMedium/SohoGothicProMedium.woff') format('woff'),
+       url('../fonts/SohoGothicProMedium/SohoGothicProMedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'soho-gothic-pro';
+  src: url('../fonts/SohoGothicProBold/SohoGothicProBold.woff2') format('woff2'),
+       url('../fonts/SohoGothicProBold/SohoGothicProBold.woff') format('woff'),
+       url('../fonts/SohoGothicProBold/SohoGothicProBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}

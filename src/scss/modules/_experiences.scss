@@ -1,0 +1,38 @@
+.experiences {
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: $font-light;
+    text-transform: uppercase;
+    color: #014f8d;
+    margin: 1.875rem 0 0.9375rem;
+  }
+
+  &__description {
+    color: #000;
+    font-weight: $font-light;
+    margin-bottom: 2.25rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem;
+  }
+
+  ul > li {
+    display: inline-block;
+  }
+
+  ul > li > a {
+    font-weight: $font-light;
+    color: #000;
+    font-size: 0.875rem;
+    border: 1px solid #ddd;
+    padding: 0 .5rem;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

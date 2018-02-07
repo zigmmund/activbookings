@@ -1,0 +1,50 @@
+.large-hero {
+  min-height: 556px;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  &__text-content {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+  }
+
+  &__title,
+  &__subtitle {
+    color: #fff;
+    margin: 0;
+  }
+
+  &__title {
+    font-weight: $font-thin;
+    font-size: 5.125rem;
+    margin-bottom: .4em;
+  }
+
+  &__subtitle {
+    font-size: 1.6875rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  &__search-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  &__search-box {
+    background-color: rgba(0,51,76,.42);
+    margin: 0 3rem;
+    padding: 2rem 0 1rem;
+  }
+
+
+}

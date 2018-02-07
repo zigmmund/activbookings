@@ -1,0 +1,21 @@
+.headline {
+  font-size: 1.625rem;
+  margin: 3rem 0 4.5rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #8f8f8f;
+  letter-spacing: 2px;
+  position: relative;
+
+  &:after {
+    content: '';
+    width: 116px;
+    height: 6px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    background: url('../assets/headline-stripe.png') center center no-repeat;
+  }
+}
