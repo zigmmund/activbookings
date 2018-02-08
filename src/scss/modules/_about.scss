@@ -1,0 +1,18 @@
+.about {
+
+  &__title {
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: $font-medium;
+    text-transform: uppercase;
+    margin: 1.875rem 0;
+    letter-spacing: 1px;
+  }
+
+  &__description {
+    font-size: 0.9375rem;
+    font-weight: $font-light;
+    color: #fff;
+  }
+
+}

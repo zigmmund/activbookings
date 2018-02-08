@@ -1,0 +1,63 @@
+.site-footer {
+  padding: 55px 0 65px;
+  background: #1e2538;
+
+  &__headline {
+    font-size: .875rem;
+    font-weight: $font-medium;
+    text-transform: uppercase;
+    color: #29a1d8;
+    letter-spacing: 1px;
+    margin-bottom: 2em;
+  }
+
+  &__links {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    li {
+      display: block;
+      margin: .5em 0;
+    }
+
+    li > a,
+    li > address {
+      color: #fff;
+      font-weight: $font-light;
+      font-size: .875rem;
+    }
+
+    li > a:hover {
+      text-decoration: none;
+      opacity: .6;
+    }
+
+    li > img {
+      padding-right: .5rem;
+    }
+
+    address {
+      display: inline;
+    }
+  }
+
+  &__social {
+
+    li {
+      display: inline-block;
+      padding-right: .5rem;
+    }
+  }
+}
+
+.bottom-bar {
+  padding: 1rem 0;
+  background: #131823;
+
+  .copy {
+    color: #fff;
+    font-weight: $font-light;
+    font-size: .875rem;
+  }
+}

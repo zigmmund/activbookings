@@ -1,0 +1,30 @@
+.feedback {
+
+  &_quotes {
+
+  }
+
+  &__text {
+    color: #fff;
+    font-weight: $font-light;
+    position: relative;
+    margin: 3rem 0 2rem;
+  }
+
+  &__author {
+    color: #000;
+    font-weight: $font-bold;
+  }
+
+  &__type {
+    color: #fff;
+    font-weight: $font-light;
+  }
+
+  &__image {
+    margin-top: 25px;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+  }
+}

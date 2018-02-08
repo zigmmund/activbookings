@@ -1,0 +1,26 @@
+.location {
+
+  &__wrapper {
+    margin-bottom: 40px;
+  }
+
+  &__caption {
+    position: absolute;
+    bottom: 40px;
+    left: 15px;
+    z-index: 10;
+    width: calc(100% - 30px);
+    height: 65px;
+    padding-top: 18px;
+    padding-left: 18px;
+    background: rgba(0,0,0,.5);
+
+    h5 {
+      color: #fff;
+      font-size: 1.125rem;
+      text-transform: uppercase;
+      font-weight: $font-light;
+      letter-spacing: 1px;
+    }
+  }
+}
