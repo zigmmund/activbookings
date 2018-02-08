@@ -208,6 +208,15 @@ body {
   color: #014f8d;
   margin: 1.875rem 0 0.9375rem; }
 
+.experiences__rating, .experiences__rating-count {
+  display: inline-block; }
+
+.experiences__rating-count {
+  padding-left: 10px;
+  font-weight: 300;
+  color: #8f8f8f;
+  font-size: 0.8125rem; }
+
 .experiences__description {
   color: #000;
   font-weight: 300;
