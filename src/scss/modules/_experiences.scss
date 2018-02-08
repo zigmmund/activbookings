@@ -1,5 +1,22 @@
 .experiences {
 
+  &__item {
+    // border: 1px solid transparent;
+    margin-bottom: 4em;
+    position: relative;
+
+    &:hover {
+      .experiences__cta {
+        display: inline-block;
+      }
+
+      .experiences__separator {
+        border-color: #4cb2d6;
+      }
+      // border-color: #1e2538;
+    }
+  }
+
   &__title {
     font-size: 1.5rem;
     font-weight: $font-light;
@@ -12,6 +29,45 @@
     color: #000;
     font-weight: $font-light;
     margin-bottom: 2.25rem;
+  }
+
+  &__cta {
+    display: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: $font-medium;
+    letter-spacing: 1px;
+    &:hover,
+    &:focus {
+      color: #4cb2d6;
+      text-decoration: none;
+    }
+  }
+
+  &__separator {
+    border-bottom: 2px solid transparent;
+  }
+
+  &__price {
+    position: absolute;
+    top: 16px;
+    right: 0;
+    background: rgba(30,37,56,.9);
+    padding: 4px 16px;
+    text-align: center;
+
+    b {
+      color: #fff;
+      font-size: 1rem;
+      font-weight: $font-medium;
+      letter-spacing: 1px;
+    }
+
+    p {
+      color: #4cb2d6;
+      font-size: 0.75rem;
+      margin-bottom: 0;
+    }
   }
 
   ul {
