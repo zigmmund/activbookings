@@ -13,10 +13,16 @@
     box-shadow: 5px 6px 15px 0 rgba(1,1,1,.45);
   }
 
-  select {
+  select,
+  input[type="text"] {
     color: #808080;
     font-weight: $font-light;
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
+  }
+
+  &-checkin {
+    min-height: 38px;
+    background: url('../assets/calendar-icon.png') 98% 6px no-repeat #fff;
   }
 
   input[type="submit"] {

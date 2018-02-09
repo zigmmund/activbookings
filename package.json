@@ -20,6 +20,7 @@
   "dependencies": {
     "bootstrap": "^4.0.0",
     "jquery": "^3.3.1",
+    "jquery-datepicker": "^1.11.5",
     "raty-js": "^2.8.0",
     "tether": "^1.4.3"
   },

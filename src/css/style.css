@@ -160,10 +160,15 @@ body {
 #bsf input {
   box-shadow: 5px 6px 15px 0 rgba(1, 1, 1, 0.45); }
 
-#bsf select {
+#bsf select,
+#bsf input[type="text"] {
   color: #808080;
   font-weight: 300;
-  font-size: 0.9375rem; }
+  font-size: 0.875rem; }
+
+#bsf-checkin {
+  min-height: 38px;
+  background: url("../assets/calendar-icon.png") 98% 6px no-repeat #fff; }
 
 #bsf input[type="submit"] {
   color: #fff;
@@ -403,4 +408,4 @@ body {
 
 img.mfp-img {
   /* TODO: remove this once correct image sizes is provided on BA */
-  min-width: 640px; }
+  width: 640px; }

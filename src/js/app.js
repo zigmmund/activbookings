@@ -3,6 +3,8 @@ $('.js-rating').raty({
   path:  "/assets/"
 });
 
+$('.js-datepicker').datepicker();
+
 $('.js-popup-link').magnificPopup({
   type: 'image',
   gallery: {
