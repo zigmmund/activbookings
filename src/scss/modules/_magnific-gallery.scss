@@ -1,0 +1,34 @@
+.mfp-bottom-bar {
+  background: #fff;
+  padding: 1rem 2rem;
+  margin-top: -40px;
+}
+
+.mfp-title {
+  text-align: center;
+  padding-right: 0;
+
+  span {
+    font-weight: 300;
+    font-size: 1.5625rem;
+    color: #4cb2d6;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    display: inline-block;
+  }
+
+  div {
+    font-weight: 300;
+    font-size: .875rem;
+    color: #000;
+  }
+}
+
+.mfp-counter {
+  visibility: hidden;
+}
+
+img.mfp-img {
+  /* TODO: remove this once correct image sizes is provided on BA */
+  min-width: 640px;
+}
