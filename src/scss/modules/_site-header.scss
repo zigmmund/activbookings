@@ -30,23 +30,27 @@
     @media(max-width: 34em) {
       padding: 0;
     }
-
-    .nav-link {
-      @media(max-width: 34em) {
-        color: white !important
-      }
-    }
   }
 
   .dropdown-menu {
-    background: #131823;
+    background: #fff;
     border-radius: 0;
+    border-color: transparent;
+
+    @media(min-width: 530px) {
+      background: #131823;
+      border-color: rgba(0,0,0,.15);
+    }
   }
 
   .dropdown-item {
     font-weight: $font-light;
-    color: #fff;
+    color: #000;
     padding: 1rem 1.75rem;
+
+    @media(min-width: 530px) {
+      color: #fff;
+    }
 
     &:hover,
     &:focus {

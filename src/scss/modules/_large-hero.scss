@@ -7,11 +7,19 @@
 
   &__text-content {
     position: absolute;
-    top: 40%;
+    top: 20%;
     left: 0;
     transform: translateY(-50%);
     width: 100%;
     text-align: center;
+
+    @media (min-width: 576px) {
+      top: 30%;
+    }
+
+    @media (min-width: 992px) {
+      top: 40%;
+    }
   }
 
   &__title,
@@ -22,15 +30,31 @@
 
   &__title {
     font-weight: $font-thin;
-    font-size: 5.125rem;
+    font-size: 2.4rem;
     margin-bottom: .4em;
+
+    @media(min-width: 576px) {
+      font-size: 3.6rem;
+    }
+
+    @media(min-width: 992px) {
+      font-size: 5.125rem;
+    }
   }
 
   &__subtitle {
-    font-size: 1.6875rem;
+    font-size: 1rem;
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 2px;
+
+    @media(min-width: 576px) {
+      font-size: 1.375rem;
+    }
+
+    @media(min-width: 992px) {
+      font-size: 1.6875rem;
+    }
   }
 
   &__search-wrapper {
