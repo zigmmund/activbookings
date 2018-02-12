@@ -1,0 +1,23 @@
+%btn-custom {
+  color: #fff;
+  font-size: 0.8125rem;
+  font-weight: $font-medium;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0.625rem 0.75rem;
+  margin-top: 0.625rem;
+  width: 100%;
+  max-width: 168px;
+  border: none;
+  background: #01618d;
+  background: linear-gradient(#01728d, #01508d);
+  border-radius: 0.25rem;
+  outline: none;
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled):active {
+    color: #fff;
+    background: #01618d;
+    background: linear-gradient(#01728d, #01508d);
+    border: none
+  }
+}

@@ -46,6 +46,26 @@ body {
   font-weight: 700;
   font-style: normal; }
 
+.large-hero__search-box input[type="submit"], .sidebar input[type="submit"], .main .list-item__cta {
+  color: #fff;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0.625rem 0.75rem;
+  margin-top: 0.625rem;
+  width: 100%;
+  max-width: 168px;
+  border: none;
+  background: #01618d;
+  background: linear-gradient(#01728d, #01508d);
+  border-radius: 0.25rem; }
+  .large-hero__search-box input[type="submit"]:not(:disabled):not(.disabled):active, .sidebar input[type="submit"]:not(:disabled):not(.disabled):active, .main .list-item__cta:not(:disabled):not(.disabled):active, .large-hero__search-box input[type="submit"]:not(:disabled):not(.disabled):active, .sidebar input[type="submit"]:not(:disabled):not(.disabled):active, .main .list-item__cta:not(:disabled):not(.disabled):active {
+    color: #fff;
+    background: #01618d;
+    background: linear-gradient(#01728d, #01508d);
+    border: none; }
+
 .top-bar {
   width: 100%;
   border-bottom: 1px solid #f0f0f0; }
@@ -173,40 +193,26 @@ body {
     margin: 0 3rem;
     padding: 2rem 0 1rem; }
 
-#bsf label {
+.large-hero__search-box label {
   color: #fff;
   text-transform: uppercase;
   font-size: 0.8125rem;
   font-weight: 500;
   letter-spacing: 1px; }
 
-#bsf select,
-#bsf input {
+.large-hero__search-box select,
+.large-hero__search-box input {
   box-shadow: 5px 6px 15px 0 rgba(1, 1, 1, 0.45); }
 
-#bsf select,
-#bsf input[type="text"] {
+.large-hero__search-box select,
+.large-hero__search-box input[type="text"] {
   color: #808080;
   font-weight: 300;
   font-size: 0.875rem; }
 
-#bsf-checkin {
+.large-hero__search-box .checkin {
   min-height: 38px;
-  background: url("../assets/calendar-icon.png") 98% 6px no-repeat #fff; }
-
-#bsf input[type="submit"] {
-  color: #fff;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  padding: 0.625rem 0.75rem;
-  margin-top: 0.625rem;
-  width: 100%;
-  max-width: 168px;
-  border: none;
-  background: #01618d;
-  background: linear-gradient(#01728d, #01508d); }
+  background: url("../assets/calendar-icon.png") 95% 6px no-repeat #fff; }
 
 .headline {
   font-size: 1.625rem;
@@ -435,3 +441,87 @@ body {
 img.mfp-img {
   /* TODO: remove this once correct image sizes is provided on BA */
   width: 640px; }
+
+.listing {
+  padding: 50px 0;
+  background: #f7f7f7; }
+  .listing .sidebar {
+    background: #ededed; }
+
+.sidebar__heading {
+  text-transform: uppercase;
+  background: #014f8d;
+  margin: 0;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 14px;
+  padding: 1em 0; }
+
+.sidebar__search-box {
+  padding: 2rem 0; }
+
+.sidebar label {
+  text-transform: uppercase;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #000; }
+
+.sidebar select,
+.sidebar input {
+  box-shadow: none; }
+
+.sidebar select,
+.sidebar input[type="text"] {
+  color: #808080;
+  font-weight: 300;
+  font-size: 0.875rem; }
+
+.sidebar .checkin {
+  min-height: 38px;
+  background: url("../assets/calendar-icon.png") 95% 6px no-repeat #fff; }
+
+.sidebar input[type="submit"] {
+  max-width: 100%; }
+
+.main .list-item {
+  margin-bottom: 1.5em;
+  background: #fff; }
+  .main .list-item__text-content {
+    padding-left: 16px; }
+    @media (min-width: 992px) {
+      .main .list-item__text-content {
+        padding-left: 0; } }
+  .main .list-item__title {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #014f8d;
+    margin: 1em 0; }
+  .main .list-item__price {
+    margin-top: 1em; }
+  .main .list-item__rating, .main .list-item__rating-count {
+    display: inline-block; }
+  .main .list-item__rating-count {
+    padding-left: 10px;
+    font-weight: 300;
+    color: #8f8f8f;
+    font-size: 0.8125rem; }
+  .main .list-item__description {
+    color: #000;
+    font-weight: 300;
+    margin: 1em 0; }
+  .main .list-item__price b {
+    color: #000;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px; }
+  .main .list-item__price p {
+    color: #8f8f8f;
+    font-size: 0.75rem;
+    margin-bottom: 0; }
+  .main .list-item__cta {
+    width: auto;
+    position: absolute;
+    bottom: 1em;
+    left: 50%;
+    transform: translateX(-50%); }
