@@ -1,0 +1,16 @@
+.activity {
+  background: #f7f7f7;
+
+  &__headline {
+    padding: 2rem 0;
+
+    span {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: $font-bold;
+      font-size: 1.6875rem;
+      color: #014f8d;
+      margin-right: 2em;
+    }
+  }
+}

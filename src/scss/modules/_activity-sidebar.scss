@@ -1,0 +1,129 @@
+.activity {
+
+  &__sidebar {
+
+  }
+
+  &__price {
+    background: #fff;
+    border: 1px solid #e2e2e2;
+    border-top: 5px solid #014f8d;
+    margin-bottom: 2em;
+
+    b {
+      font-size: 1.6875rem;
+      font-weight: $font-medium;
+    }
+
+    p {
+      margin-bottom: .5em;
+      font-size: 1rem;
+      color: #8f8f8f;
+      font-weight: 300;
+    }
+  }
+
+  &__bookings {
+    text-transform: uppercase;
+    background: #014f8d;
+    margin: 0;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 14px;
+    padding: 1em 0;
+  }
+
+  &__search-box {
+    padding: 2em 0 1em;
+    margin-bottom: 1em;
+    background: #ededed;
+
+    label {
+      text-transform: uppercase;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: #000;
+    }
+
+    .checkin {
+      min-height: 38px;
+      background: url('../assets/calendar-icon.png') 95% 6px no-repeat #fff;
+    }
+
+    input[type="submit"] {
+      @extend %btn-custom;
+      max-width: 100%;
+    }
+
+    .timeslots {
+
+      label {
+        float: left;
+        width: 33%;
+        background: #fff;
+        border: 1px solid #d0d0d0;
+        margin: 0;
+        overflow: auto;
+      }
+
+      span {
+        text-align: center;
+        font-size: .875rem;
+        font-weight: $font-light;
+        padding: .5em 0;
+        display: block;
+        color: #c0c0c0;
+      }
+
+      input {
+        position: absolute;
+        top: -9999px;
+      }
+
+      input:checked + span {
+        background: #404040;
+        color: #f7f7f7;
+      }
+    }
+
+    .price-category {
+      padding: 1rem 0;
+      border-bottom: 1px solid #c0c0c0;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      h6, b {
+        color: #333;
+        font-weight: $font-light;
+        font-size: 1rem;
+        margin: 0;
+        text-transform: uppercase;
+      }
+
+      span {
+        color: #c0c0c0;
+        font-size: 1rem;
+        text-transform: lowercase;
+        font-weight: $font-light;
+      }
+
+      .input-group-prepend button {
+        border-right: none;
+        border-color: #c8c8c8;
+      }
+
+      .input-group-append button {
+        border-left: none;
+        border-color: #c8c8c8;
+      }
+
+      input[type="text"] {
+        text-align: center;
+        border-left: none;
+        border-right: none;
+      }
+    }
+  }
+}

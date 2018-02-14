@@ -1,0 +1,83 @@
+.activity {
+
+  &__main {
+
+  }
+
+  &__details {
+    padding: 2rem 0;
+    margin: 0;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      margin-right: 2em;
+      text-transform: uppercase;
+
+      img {
+        margin-left: 10px;
+      }
+
+      b {
+        color: #014f8d;
+        font-weight: $font-medium;
+      }
+
+      span {
+        color: #000;
+        font-weight: $font-light;
+      }
+    }
+  }
+
+  &__description {
+    color: #000;
+    font-weight: 300;
+    margin: 1em 0;
+  }
+
+  &__additions {
+    padding: 1rem 0;
+
+    h5 {
+      margin: 0 0 1em;
+      color: #014f8d;
+      font-weight: $font-medium;
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+
+    p {
+      color: #000;
+      font-weight: 300;
+      margin: 1em 0;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: inline-block;
+        padding-right: 2em;
+        color: #000;
+        font-weight: 300;
+
+        > p {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .cancellink {
+    color: #014f8d;
+    font-weight: $font-light;
+    cursor: pointer;
+  }
+
+  .cancelation-policy {
+    display: none;
+  }
+}

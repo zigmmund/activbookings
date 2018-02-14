@@ -46,7 +46,7 @@ body {
   font-weight: 700;
   font-style: normal; }
 
-.large-hero__search-box input[type="submit"], .sidebar input[type="submit"], .main .list-item__cta {
+.large-hero__search-box input[type="submit"], .listing input[type="submit"], .list-item__cta, .activity__search-box input[type="submit"] {
   color: #fff;
   font-size: 0.8125rem;
   font-weight: 500;
@@ -59,8 +59,9 @@ body {
   border: none;
   background: #01618d;
   background: linear-gradient(#01728d, #01508d);
-  border-radius: 0.25rem; }
-  .large-hero__search-box input[type="submit"]:not(:disabled):not(.disabled):active, .sidebar input[type="submit"]:not(:disabled):not(.disabled):active, .main .list-item__cta:not(:disabled):not(.disabled):active, .large-hero__search-box input[type="submit"]:not(:disabled):not(.disabled):active, .sidebar input[type="submit"]:not(:disabled):not(.disabled):active, .main .list-item__cta:not(:disabled):not(.disabled):active {
+  border-radius: 0.25rem;
+  outline: none; }
+  .large-hero__search-box input[type="submit"]:not(:disabled):not(.disabled):active, .listing input[type="submit"]:not(:disabled):not(.disabled):active, .list-item__cta:not(:disabled):not(.disabled):active, .activity__search-box input[type="submit"]:not(:disabled):not(.disabled):active, .large-hero__search-box input[type="submit"]:not(:disabled):not(.disabled):active, .listing input[type="submit"]:not(:disabled):not(.disabled):active, .list-item__cta:not(:disabled):not(.disabled):active, .activity__search-box input[type="submit"]:not(:disabled):not(.disabled):active {
     color: #fff;
     background: #01618d;
     background: linear-gradient(#01728d, #01508d);
@@ -445,10 +446,176 @@ img.mfp-img {
 .listing {
   padding: 50px 0;
   background: #f7f7f7; }
-  .listing .sidebar {
+  .listing__sidebar {
     background: #ededed; }
+  .listing__heading {
+    text-transform: uppercase;
+    background: #014f8d;
+    margin: 0;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 14px;
+    padding: 1em 0; }
+  .listing__search-box {
+    padding: 2rem 0; }
+  .listing label {
+    text-transform: uppercase;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: #000; }
+  .listing select,
+  .listing input {
+    box-shadow: none; }
+  .listing select,
+  .listing input[type="text"] {
+    color: #808080;
+    font-weight: 300;
+    font-size: 0.875rem; }
+  .listing .checkin {
+    min-height: 38px;
+    background: url("../assets/calendar-icon.png") 95% 6px no-repeat #fff; }
+  .listing input[type="submit"] {
+    max-width: 100%; }
+  .listing__info {
+    padding: 2rem 0;
+    background: #f7f7f7; }
+    .listing__info h4 {
+      font-size: 1.5rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      color: #014f8d;
+      margin: 1em 0;
+      text-align: left;
+      letter-spacing: 1px; }
+    .listing__info p {
+      color: #000;
+      font-weight: 300;
+      margin: 0 0 1em; }
 
-.sidebar__heading {
+.list-item {
+  margin-bottom: 1.5em;
+  background: #fff; }
+  .list-item__text-content {
+    padding-left: 16px; }
+    @media (min-width: 992px) {
+      .list-item__text-content {
+        padding-left: 0; } }
+  .list-item__title {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #014f8d;
+    margin: 1em 0; }
+  .list-item__price {
+    margin-top: 1em; }
+  .list-item__rating, .list-item__rating-count {
+    display: inline-block; }
+  .list-item__rating-count {
+    padding-left: 10px;
+    font-weight: 300;
+    color: #8f8f8f;
+    font-size: 0.8125rem; }
+  .list-item__description {
+    color: #000;
+    font-weight: 300;
+    margin: 1em 0; }
+  .list-item__price b {
+    color: #000;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px; }
+  .list-item__price p {
+    color: #8f8f8f;
+    font-size: 0.75rem;
+    margin-bottom: 0; }
+  .list-item__cta {
+    width: auto;
+    position: absolute;
+    bottom: 1em;
+    left: 50%;
+    transform: translateX(-50%); }
+
+.activity {
+  background: #f7f7f7; }
+  .activity__headline {
+    padding: 2rem 0; }
+    .activity__headline span {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 700;
+      font-size: 1.6875rem;
+      color: #014f8d;
+      margin-right: 2em; }
+
+.activity__details {
+  padding: 2rem 0;
+  margin: 0;
+  list-style: none; }
+  .activity__details li {
+    display: inline-block;
+    margin-right: 2em;
+    text-transform: uppercase; }
+    .activity__details li img {
+      margin-left: 10px; }
+    .activity__details li b {
+      color: #014f8d;
+      font-weight: 500; }
+    .activity__details li span {
+      color: #000;
+      font-weight: 300; }
+
+.activity__description {
+  color: #000;
+  font-weight: 300;
+  margin: 1em 0; }
+
+.activity__additions {
+  padding: 1rem 0; }
+  .activity__additions h5 {
+    margin: 0 0 1em;
+    color: #014f8d;
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: uppercase; }
+  .activity__additions p {
+    color: #000;
+    font-weight: 300;
+    margin: 1em 0; }
+  .activity__additions ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .activity__additions ul li {
+      display: inline-block;
+      padding-right: 2em;
+      color: #000;
+      font-weight: 300; }
+      .activity__additions ul li > p {
+        margin: 0; }
+
+.activity .cancellink {
+  color: #014f8d;
+  font-weight: 300;
+  cursor: pointer; }
+
+.activity .cancelation-policy {
+  display: none; }
+
+.activity__price {
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  border-top: 5px solid #014f8d;
+  margin-bottom: 2em; }
+  .activity__price b {
+    font-size: 1.6875rem;
+    font-weight: 500; }
+  .activity__price p {
+    margin-bottom: .5em;
+    font-size: 1rem;
+    color: #8f8f8f;
+    font-weight: 300; }
+
+.activity__bookings {
   text-transform: uppercase;
   background: #014f8d;
   margin: 0;
@@ -457,71 +624,63 @@ img.mfp-img {
   font-size: 14px;
   padding: 1em 0; }
 
-.sidebar__search-box {
-  padding: 2rem 0; }
-
-.sidebar label {
-  text-transform: uppercase;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  color: #000; }
-
-.sidebar select,
-.sidebar input {
-  box-shadow: none; }
-
-.sidebar select,
-.sidebar input[type="text"] {
-  color: #808080;
-  font-weight: 300;
-  font-size: 0.875rem; }
-
-.sidebar .checkin {
-  min-height: 38px;
-  background: url("../assets/calendar-icon.png") 95% 6px no-repeat #fff; }
-
-.sidebar input[type="submit"] {
-  max-width: 100%; }
-
-.main .list-item {
-  margin-bottom: 1.5em;
-  background: #fff; }
-  .main .list-item__text-content {
-    padding-left: 16px; }
-    @media (min-width: 992px) {
-      .main .list-item__text-content {
-        padding-left: 0; } }
-  .main .list-item__title {
-    font-size: 1.5rem;
-    font-weight: 300;
+.activity__search-box {
+  padding: 2em 0 1em;
+  margin-bottom: 1em;
+  background: #ededed; }
+  .activity__search-box label {
     text-transform: uppercase;
-    color: #014f8d;
-    margin: 1em 0; }
-  .main .list-item__price {
-    margin-top: 1em; }
-  .main .list-item__rating, .main .list-item__rating-count {
-    display: inline-block; }
-  .main .list-item__rating-count {
-    padding-left: 10px;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: #000; }
+  .activity__search-box .checkin {
+    min-height: 38px;
+    background: url("../assets/calendar-icon.png") 95% 6px no-repeat #fff; }
+  .activity__search-box input[type="submit"] {
+    max-width: 100%; }
+  .activity__search-box .timeslots label {
+    float: left;
+    width: 33%;
+    background: #fff;
+    border: 1px solid #d0d0d0;
+    margin: 0;
+    overflow: auto; }
+  .activity__search-box .timeslots span {
+    text-align: center;
+    font-size: .875rem;
     font-weight: 300;
-    color: #8f8f8f;
-    font-size: 0.8125rem; }
-  .main .list-item__description {
-    color: #000;
-    font-weight: 300;
-    margin: 1em 0; }
-  .main .list-item__price b {
-    color: #000;
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 1px; }
-  .main .list-item__price p {
-    color: #8f8f8f;
-    font-size: 0.75rem;
-    margin-bottom: 0; }
-  .main .list-item__cta {
-    width: auto;
+    padding: .5em 0;
+    display: block;
+    color: #c0c0c0; }
+  .activity__search-box .timeslots input {
     position: absolute;
-    bottom: 1em;
-    left: 50%;
-    transform: translateX(-50%); }
+    top: -9999px; }
+  .activity__search-box .timeslots input:checked + span {
+    background: #404040;
+    color: #f7f7f7; }
+  .activity__search-box .price-category {
+    padding: 1rem 0;
+    border-bottom: 1px solid #c0c0c0; }
+    .activity__search-box .price-category:last-child {
+      border-bottom: none; }
+    .activity__search-box .price-category h6, .activity__search-box .price-category b {
+      color: #333;
+      font-weight: 300;
+      font-size: 1rem;
+      margin: 0;
+      text-transform: uppercase; }
+    .activity__search-box .price-category span {
+      color: #c0c0c0;
+      font-size: 1rem;
+      text-transform: lowercase;
+      font-weight: 300; }
+    .activity__search-box .price-category .input-group-prepend button {
+      border-right: none;
+      border-color: #c8c8c8; }
+    .activity__search-box .price-category .input-group-append button {
+      border-left: none;
+      border-color: #c8c8c8; }
+    .activity__search-box .price-category input[type="text"] {
+      text-align: center;
+      border-left: none;
+      border-right: none; }

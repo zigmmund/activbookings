@@ -18,3 +18,14 @@ $('.js-popup-link').magnificPopup({
 		}
   }
 });
+
+$('.js-popup-activity-link').magnificPopup({
+  type: 'image',
+  gallery: {
+    enabled: true
+  }
+})
+
+$('.js-toggle-policy').on('click', function() {
+  $('.js-policy').toggle(300);
+});
