@@ -1,0 +1,90 @@
+.activity {
+
+  &__testimonials {
+    padding: 2rem 0;
+
+    h5 {
+      font-size: 1.5625rem;
+      font-weight: $font-light;
+      color: $primary-color;
+      letter-spacing: 1px;
+      margin: 2em 0;
+      text-transform: uppercase;
+    }
+
+    .toggle-testimonials {
+      color: $primary-color;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.testimonial {
+  margin-bottom: 3em;
+
+  &:last-of-type {
+    margin-bottom: 1em;
+  }
+
+  &__author {
+    font-weight: $font-medium;
+    color: #000;
+    font-size: 1rem;
+    padding-right: 1rem;
+  }
+
+  &__date {
+    font-weight: $font-light;
+  }
+
+  &__text {
+    color: #000;
+    font-weight: 300;
+    margin: 1em 0;
+  }
+
+  &__contact-form {
+
+    input[type="text"],
+    textarea {
+      color: #808080;
+      font-weight: $font-light;
+      font-size: 1rem;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    input[type="submit"] {
+      @extend %btn-custom;
+    }
+  }
+}
+
+.social-sharing {
+  h6 {
+    font-weight: $font-medium;
+    color: $primary-color;
+    letter-spacing: 1px;
+    margin: 0 0 1em;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  ul li {
+    display: inline-block;
+    padding-right: 1rem;
+  }
+
+  a:hover {
+    opacity: .8;
+  }
+}
