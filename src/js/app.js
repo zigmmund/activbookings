@@ -3,7 +3,9 @@ $('.js-rating').raty({
   path:  "/assets/"
 });
 
-$('.js-datepicker').datepicker();
+$('.js-datepicker').datepicker({
+  showOtherMonths: true
+});
 
 $('.js-popup-link').magnificPopup({
   type: 'image',
