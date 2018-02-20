@@ -557,12 +557,13 @@ img.mfp-img {
   margin-bottom: 1em; }
 
 .activity__details {
-  padding: 2rem 0;
+  padding: 2rem 0 0;
   margin: 0;
   list-style: none; }
   .activity__details li {
     display: inline-block;
     margin-right: 2em;
+    margin-bottom: 1em;
     text-transform: uppercase; }
     .activity__details li img {
       margin-left: 10px; }
@@ -702,7 +703,8 @@ img.mfp-img {
       position: relative; }
     .activity__search-box .price-category .input-group input[type='button'] {
       background-color: #eeeeee;
-      min-width: 38px;
+      min-width: 30%;
+      max-width: 38px;
       width: auto;
       transition: all 300ms ease; }
     .activity__search-box .price-category .input-group .button-minus,
@@ -725,7 +727,8 @@ img.mfp-img {
       height: 38px;
       left: -6px;
       text-align: center;
-      width: 50px;
+      width: 33%;
+      max-width: 50px;
       display: inline-block;
       font-size: 13px;
       margin: 0 0 5px;
