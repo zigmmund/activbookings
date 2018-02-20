@@ -684,16 +684,59 @@ img.mfp-img {
       font-size: 1rem;
       text-transform: lowercase;
       font-weight: 300; }
-    .activity__search-box .price-category .input-group-prepend button {
-      border-right: none;
-      border-color: #c8c8c8; }
-    .activity__search-box .price-category .input-group-append button {
-      border-left: none;
-      border-color: #c8c8c8; }
-    .activity__search-box .price-category input[type="text"] {
+    .activity__search-box .price-category input,
+    .activity__search-box .price-category textarea {
+      border: 1px solid #c8c8c8;
+      box-sizing: border-box;
+      margin: 0;
+      outline: none;
+      padding: 10px; }
+    .activity__search-box .price-category input[type="button"] {
+      -webkit-appearance: button;
+      cursor: pointer; }
+    .activity__search-box .price-category input::-webkit-outer-spin-button,
+    .activity__search-box .price-category input::-webkit-inner-spin-button {
+      -webkit-appearance: none; }
+    .activity__search-box .price-category .input-group {
+      clear: both;
+      position: relative; }
+    .activity__search-box .price-category .input-group input[type='button'] {
+      background-color: #eeeeee;
+      min-width: 38px;
+      width: auto;
+      transition: all 300ms ease; }
+    .activity__search-box .price-category .input-group .button-minus,
+    .activity__search-box .price-category .input-group .button-plus {
+      font-size: 1rem;
+      height: 38px;
+      padding: 0;
+      color: #014f8d;
+      width: 38px;
+      position: relative; }
+    .activity__search-box .price-category .input-group .button-minus {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px; }
+    .activity__search-box .price-category .input-group .button-plus {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      border-left: none; }
+    .activity__search-box .price-category .input-group .quantity-field {
+      position: relative;
+      height: 38px;
+      left: -6px;
       text-align: center;
+      width: 50px;
+      display: inline-block;
+      font-size: 13px;
+      margin: 0 0 5px;
+      resize: vertical;
       border-left: none;
-      border-right: none; }
+      color: #808080; }
+    .activity__search-box .price-category .button-plus {
+      left: -13px; }
+    .activity__search-box .price-category input[type="number"] {
+      -moz-appearance: textfield;
+      -webkit-appearance: none; }
 
 .activity__testimonials {
   padding: 2rem 0; }
