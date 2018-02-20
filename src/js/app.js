@@ -23,6 +23,12 @@ $('.js-popup-activity-link').magnificPopup({
   type: 'image',
   gallery: {
     enabled: true
+  },
+  image: {
+    markup: '<div class="mfp-figure">'+
+              '<div class="mfp-close"></div>'+
+              '<div class="mfp-img"></div>'+
+            '</div>'
   }
 })
 
