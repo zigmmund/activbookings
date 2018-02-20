@@ -1,0 +1,133 @@
+.checkout {
+  min-height: calc(100vh - 69px);
+
+  &__header {
+    background-color: $primary-color;
+    padding: 1rem 0;
+  }
+
+  &__heading {
+    font-size: 1.25rem;
+    font-weight: $font-light;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #808080;
+    background-color: #e8e8e8;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  &__summary {
+    border-radius: 4px;
+    margin-bottom: 2rem;
+
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 1.125rem;
+      color: #000;
+      text-transform: uppercase;
+      font-weight: 500;
+      letter-spacing: 1px;
+      padding: 0 1rem;
+      margin: 1.5rem 0 0;
+    }
+  }
+
+  img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  &__order {
+    padding: 2em 0 5em;
+    background: #f7f7f7;
+  }
+
+  .back-to-edit {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: -21px;
+    right: 20px;
+    font-weight: 300;
+    padding: .5rem 2rem;
+    background-color: #6b6b6b;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    letter-spacing: 1px;
+
+    &:hover {
+      text-decoration: none;
+      background-color: $primary-color;
+    }
+  }
+
+  &__text-content {
+    position: relative;
+    border: 1px solid #d2d2d2;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    table {
+      width: 100%;
+    }
+
+    tr td:last-of-type {
+      text-align: right;
+    }
+
+    tbody {
+
+      tr td {
+        padding: .25rem 1rem;
+        color: #808080;
+        font-weight: 300;
+      }
+
+      tr:last-of-type td {
+        padding-bottom: 1rem;
+      }
+    }
+
+    tfoot {
+      background: #dcdcdc;
+
+      tr td {
+        color: #000;
+        font-weight: $font-medium;
+        padding: .5rem 1rem;
+      }
+    }
+  }
+
+  h3 {
+    font-size: 1rem;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0 0 2em;
+  }
+
+  &__payments {
+
+    input {
+      color: #808080;
+      font-weight: 300;
+      font-size: 0.875rem;
+    }
+
+    input[name="Card_number"] {
+      padding-left: 50px;
+      background: url('../assets/credit-card-icon.png') 12px 7px no-repeat #fff;
+    }
+
+    input[type="submit"] {
+      @extend %btn-custom;
+      max-width: 100%;
+    }
+  }
+}

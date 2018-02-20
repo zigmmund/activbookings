@@ -46,7 +46,7 @@ body {
   font-weight: 700;
   font-style: normal; }
 
-.large-hero__search-box input[type="submit"], .listing input[type="submit"], .list-item__cta, .activity__search-box input[type="submit"], .testimonial__contact-form input[type="submit"] {
+.large-hero__search-box input[type="submit"], .listing input[type="submit"], .list-item__cta, .activity__search-box input[type="submit"], .testimonial__contact-form input[type="submit"], .checkout__payments input[type="submit"] {
   color: #fff;
   font-size: 0.8125rem;
   font-weight: 500;
@@ -61,7 +61,7 @@ body {
   background: linear-gradient(#01728d, #01508d);
   border-radius: 0.25rem;
   outline: none; }
-  .large-hero__search-box input[type="submit"]:not(:disabled):not(.disabled):active, .listing input[type="submit"]:not(:disabled):not(.disabled):active, .list-item__cta:not(:disabled):not(.disabled):active, .activity__search-box input[type="submit"]:not(:disabled):not(.disabled):active, .testimonial__contact-form input[type="submit"]:not(:disabled):not(.disabled):active, .large-hero__search-box input[type="submit"]:not(:disabled):not(.disabled):active, .listing input[type="submit"]:not(:disabled):not(.disabled):active, .list-item__cta:not(:disabled):not(.disabled):active, .activity__search-box input[type="submit"]:not(:disabled):not(.disabled):active, .testimonial__contact-form input[type="submit"]:not(:disabled):not(.disabled):active {
+  .large-hero__search-box input[type="submit"]:not(:disabled):not(.disabled):active, .listing input[type="submit"]:not(:disabled):not(.disabled):active, .list-item__cta:not(:disabled):not(.disabled):active, .activity__search-box input[type="submit"]:not(:disabled):not(.disabled):active, .testimonial__contact-form input[type="submit"]:not(:disabled):not(.disabled):active, .checkout__payments input[type="submit"]:not(:disabled):not(.disabled):active, .large-hero__search-box input[type="submit"]:not(:disabled):not(.disabled):active, .listing input[type="submit"]:not(:disabled):not(.disabled):active, .list-item__cta:not(:disabled):not(.disabled):active, .activity__search-box input[type="submit"]:not(:disabled):not(.disabled):active, .testimonial__contact-form input[type="submit"]:not(:disabled):not(.disabled):active, .checkout__payments input[type="submit"]:not(:disabled):not(.disabled):active {
     color: #fff;
     background: #01618d;
     background: linear-gradient(#01728d, #01508d);
@@ -749,3 +749,90 @@ img.mfp-img {
 
 .social-sharing a:hover {
   opacity: .8; }
+
+.checkout {
+  min-height: calc(100vh - 69px); }
+  .checkout__header {
+    background-color: #014f8d;
+    padding: 1rem 0; }
+  .checkout__heading {
+    font-size: 1.25rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #808080;
+    background-color: #e8e8e8;
+    margin: 0;
+    padding: 1rem; }
+  .checkout__summary {
+    border-radius: 4px;
+    margin-bottom: 2rem; }
+    @media (min-width: 768px) {
+      .checkout__summary {
+        margin-bottom: 0; } }
+    .checkout__summary h2 {
+      font-size: 1.125rem;
+      color: #000;
+      text-transform: uppercase;
+      font-weight: 500;
+      letter-spacing: 1px;
+      padding: 0 1rem;
+      margin: 1.5rem 0 0; }
+  .checkout img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px; }
+  .checkout__order {
+    padding: 2em 0 5em;
+    background: #f7f7f7; }
+  .checkout .back-to-edit {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: -21px;
+    right: 20px;
+    font-weight: 300;
+    padding: .5rem 2rem;
+    background-color: #6b6b6b;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    letter-spacing: 1px; }
+    .checkout .back-to-edit:hover {
+      text-decoration: none;
+      background-color: #014f8d; }
+  .checkout__text-content {
+    position: relative;
+    border: 1px solid #d2d2d2;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px; }
+    .checkout__text-content table {
+      width: 100%; }
+    .checkout__text-content tr td:last-of-type {
+      text-align: right; }
+    .checkout__text-content tbody tr td {
+      padding: .25rem 1rem;
+      color: #808080;
+      font-weight: 300; }
+    .checkout__text-content tbody tr:last-of-type td {
+      padding-bottom: 1rem; }
+    .checkout__text-content tfoot {
+      background: #dcdcdc; }
+      .checkout__text-content tfoot tr td {
+        color: #000;
+        font-weight: 500;
+        padding: .5rem 1rem; }
+  .checkout h3 {
+    font-size: 1rem;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0 0 2em; }
+  .checkout__payments input {
+    color: #808080;
+    font-weight: 300;
+    font-size: 0.875rem; }
+  .checkout__payments input[name="Card_number"] {
+    padding-left: 50px;
+    background: url("../assets/credit-card-icon.png") 12px 7px no-repeat #fff; }
+  .checkout__payments input[type="submit"] {
+    max-width: 100%; }
