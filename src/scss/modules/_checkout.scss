@@ -113,21 +113,105 @@
   }
 
   &__payments {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: relative;
+    max-width: 750px;
+  }
+
+  &__cell {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+    -ms-flex: auto;
+    flex: auto;
+    min-width: 100%;
+    min-height: 200px;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-left: -10px;
+    margin-right: -10px;
+
+    form {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+      transition-property: opacity, transform;
+      transition-duration: 0.35s;
+      transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    fieldset {
+      margin: 0 0 20px;
+      padding: 0;
+      border-style: none;
+      background-color: #fff;
+      box-shadow: 0 6px 9px rgba(50, 50, 93, 0.06), 0 2px 5px rgba(0, 0, 0, 0.08), inset 0 1px 0 #d2d2d2;
+      border-radius: 4px;
+    }
+
+    .row {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
+    .row + .row {
+      border-top: 1px solid #d2d2d2;
+    }
+
+    label {
+      width: 15%;
+      min-width: 70px;
+      padding: 11px 0;
+      color: #015d8d;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-size: 0.9375rem;
+      font-weight: 300;
+      display: block;
+      margin: 0;
+    }
+
+    input,
+    button {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      outline: none;
+      border-style: none;
+      -webkit-tap-highlight-color: transparent;
+    }
 
     input {
-      color: #808080;
+      width: 100%;
+      padding: 11px 15px 11px 0;
+      color: #000;
+      background-color: transparent;
+      -webkit-animation: 1ms void-animation-out;
+      font-size: 0.9375rem;
       font-weight: 300;
-      font-size: 0.875rem;
     }
 
-    input[name="Card_number"] {
-      padding-left: 50px;
-      background: url('../assets/credit-card-icon.png') 12px 7px no-repeat #fff;
-    }
-
-    input[type="submit"] {
-      @extend %btn-custom;
-      max-width: 100%;
+    input::placeholder {
+      color: #d2d2d2;
     }
   }
+}
+
+#customButton {
+  @extend %btn-custom;
+  max-width: 100%;
 }

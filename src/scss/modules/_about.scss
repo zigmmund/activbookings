@@ -4,7 +4,7 @@
   background-position: center center;
   background-repeat: no-repeat;
 
-  &__title {
+  h5 {
     color: #fff;
     font-size: 1.125rem;
     font-weight: $font-medium;
@@ -13,7 +13,7 @@
     letter-spacing: 1px;
   }
 
-  &__description {
+  p {
     font-size: 0.9375rem;
     font-weight: $font-light;
     color: #fff;
