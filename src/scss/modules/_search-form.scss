@@ -11,6 +11,23 @@
   select,
   input {
     box-shadow: 5px 6px 15px 0 rgba(1,1,1,.45);
+    border: 0 !important;
+
+    &:focus {
+      box-shadow: 5px 6px 15px 0 rgba(1,1,1,.45);
+    }
+  }
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    // TODO: replace ../ with /static/ before assets
+    background-image: url('../assets/select-arrow.png');
+    background-repeat: no-repeat;
+    background-position: 95% 15px;
+    text-indent: 0.01px;
+    text-overflow: "";
+    cursor: pointer;
   }
 
   select,
@@ -22,7 +39,8 @@
 
   .checkin {
     min-height: 38px;
-    background: url('/static/assets/calendar-icon.png') 95% 6px no-repeat #fff;
+    // TODO: replace ../ with /static/ before assets
+    background: url('../assets/calendar-icon.png') 95% 6px no-repeat #fff;
   }
 
   input[type="submit"] {

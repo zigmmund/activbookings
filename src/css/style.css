@@ -7,6 +7,10 @@ body {
   max-width: 100%;
   height: auto; }
 
+select:-moz-focusring {
+  color: transparent !important;
+  text-shadow: 0 0 0 #000 !important; }
+
 .map-wrapper {
   overflow: hidden;
   height: 400px;
@@ -122,6 +126,16 @@ body {
     @media (max-width: 34em) {
       .navbar .nav-item {
         padding: 0; } }
+  .navbar .dropdown-toggle:after {
+    position: relative;
+    margin: 0 0 0 0.255em;
+    height: 8px;
+    width: 8px;
+    transition: all 0.6s;
+    border-top: 2px solid #000;
+    border-right: 0px solid transparent;
+    border-left: 2px solid #000;
+    transform: rotate(225deg); }
   .navbar .dropdown-menu {
     background: #fff;
     border-radius: 0;
@@ -203,7 +217,21 @@ body {
 
 .large-hero__search-box select,
 .large-hero__search-box input {
-  box-shadow: 5px 6px 15px 0 rgba(1, 1, 1, 0.45); }
+  box-shadow: 5px 6px 15px 0 rgba(1, 1, 1, 0.45);
+  border: 0 !important; }
+  .large-hero__search-box select:focus,
+  .large-hero__search-box input:focus {
+    box-shadow: 5px 6px 15px 0 rgba(1, 1, 1, 0.45); }
+
+.large-hero__search-box select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../assets/select-arrow.png");
+  background-repeat: no-repeat;
+  background-position: 95% 15px;
+  text-indent: 0.01px;
+  text-overflow: "";
+  cursor: pointer; }
 
 .large-hero__search-box select,
 .large-hero__search-box input[type="text"] {
@@ -213,7 +241,7 @@ body {
 
 .large-hero__search-box .checkin {
   min-height: 38px;
-  background: url("/static/assets/calendar-icon.png") 95% 6px no-repeat #fff; }
+  background: url("../assets/calendar-icon.png") 95% 6px no-repeat #fff; }
 
 .headline {
   font-size: 1.625rem;
@@ -466,12 +494,25 @@ img.mfp-img {
     color: #000; }
   .listing select,
   .listing input {
-    box-shadow: none; }
+    box-shadow: none;
+    border: 0 !important; }
+    .listing select:focus,
+    .listing input:focus {
+      box-shadow: none; }
   .listing select,
   .listing input[type="text"] {
     color: #808080;
     font-weight: 300;
     font-size: 0.875rem; }
+  .listing select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("../assets/select-arrow.png");
+    background-repeat: no-repeat;
+    background-position: 95% 15px;
+    text-indent: 0.01px;
+    text-overflow: "";
+    cursor: pointer; }
   .listing .checkin {
     min-height: 38px;
     background: url("/static/assets/calendar-icon.png") 95% 6px no-repeat #fff; }
@@ -1115,6 +1156,18 @@ img.mfp-img {
 @media (min-width: 992px) {
   .template__secondary .navbar .nav-link {
     color: #fff; } }
+
+.template__secondary .dropdown-toggle:after {
+  border-top: 2px solid #000;
+  border-left: 2px solid #000; }
+  @media (min-width: 992px) {
+    .template__secondary .dropdown-toggle:after {
+      border-top-color: #fff;
+      border-left-color: #fff; } }
+
+.template__secondary .dropdown-toggle:hover:after {
+  border-top-color: #36b0d9;
+  border-left-color: #36b0d9; }
 
 .template__secondary .large-hero {
   min-height: 674px; }

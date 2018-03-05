@@ -31,6 +31,11 @@
   select,
   input {
     box-shadow: none;
+    border: 0 !important;
+
+    &:focus {
+      box-shadow: none
+    }
   }
 
   select,
@@ -38,6 +43,18 @@
     color: #808080;
     font-weight: $font-light;
     font-size: 0.875rem;
+  }
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    // TODO: replace ../ with /static/ before assets
+    background-image: url('../assets/select-arrow.png');
+    background-repeat: no-repeat;
+    background-position: 95% 15px;
+    text-indent: 0.01px;
+    text-overflow: "";
+    cursor: pointer;
   }
 
   .checkin {

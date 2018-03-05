@@ -9,6 +9,11 @@ body {
   height: auto;
 }
 
+select:-moz-focusring {
+  color: transparent !important;
+  text-shadow: 0 0 0 #000 !important;
+}
+
 // Google map section stylesheet
 .map-wrapper {
   overflow: hidden;

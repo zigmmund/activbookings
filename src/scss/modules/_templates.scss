@@ -41,6 +41,21 @@
       }
     }
 
+    .dropdown-toggle:after {
+      border-top: 2px solid #000;
+      border-left: 2px solid #000;
+
+      @media (min-width: 992px) {
+        border-top-color: #fff;
+        border-left-color: #fff;
+      }
+    }
+
+    .dropdown-toggle:hover:after {
+      border-top-color: #36b0d9;
+      border-left-color: #36b0d9;
+    }
+
     .large-hero {
       min-height: 674px;
 
