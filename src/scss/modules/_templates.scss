@@ -1,0 +1,60 @@
+.template {
+  &__secondary {
+
+    header {
+
+      @media (min-width: 992px) {
+        width: 960px;
+        position: absolute;
+        top: 31px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+      }
+
+      @media (min-width: 1200px) {
+        width: 1140px;
+      }
+    }
+
+    .logo {
+      &--secondary {
+        display: none;
+        @media (min-width: 992px) {
+          display: inline-block;
+        }
+      }
+
+      &--primary {
+        display: inline-block;
+        @media (min-width: 992px) {
+          display: none;
+        }
+      }
+    }
+
+    .navbar {
+      .nav-link {
+        @media (min-width: 992px) {
+          color: #fff;
+        }
+      }
+    }
+
+    .large-hero {
+      min-height: 674px;
+
+      &__text-content {
+        top: 30%;
+
+        @media (min-width: 576px) {
+          top: 40%;
+        }
+
+        @media (min-width: 992px) {
+          top: 50%;
+        }
+      }
+    }
+  }
+}

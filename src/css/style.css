@@ -1086,3 +1086,43 @@ img.mfp-img {
 .ui-datepicker-title .ui-datepicker-month,
 .ui-datepicker-title .ui-datepicker-year {
   font-size: 1rem; }
+
+@media (min-width: 992px) {
+  .template__secondary header {
+    width: 960px;
+    position: absolute;
+    top: 31px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; } }
+
+@media (min-width: 1200px) {
+  .template__secondary header {
+    width: 1140px; } }
+
+.template__secondary .logo--secondary {
+  display: none; }
+  @media (min-width: 992px) {
+    .template__secondary .logo--secondary {
+      display: inline-block; } }
+
+.template__secondary .logo--primary {
+  display: inline-block; }
+  @media (min-width: 992px) {
+    .template__secondary .logo--primary {
+      display: none; } }
+
+@media (min-width: 992px) {
+  .template__secondary .navbar .nav-link {
+    color: #fff; } }
+
+.template__secondary .large-hero {
+  min-height: 674px; }
+  .template__secondary .large-hero__text-content {
+    top: 30%; }
+    @media (min-width: 576px) {
+      .template__secondary .large-hero__text-content {
+        top: 40%; } }
+    @media (min-width: 992px) {
+      .template__secondary .large-hero__text-content {
+        top: 50%; } }
