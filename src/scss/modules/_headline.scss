@@ -16,15 +16,15 @@
     left: 50%;
     bottom: -10px;
     transform: translateX(-50%);
-    background: url('../assets/headline-stripe.png') center center no-repeat;
+    background: url('/static/assets/headline-stripe.png') center center no-repeat;
   }
 
   &--white {
 
     color: #fff;
-    
+
     &:after {
-      background: url('../assets/headline-stripe-white.png') center center no-repeat;
+      background: url('/static/assets/headline-stripe-white.png') center center no-repeat;
     }
   }
 }

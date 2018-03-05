@@ -201,7 +201,7 @@ function initMap() {
     url: '../assets/custom-pin.png',
     size: new google.maps.Size(32, 48),
     scaledSize: new google.maps.Size(32, 48),
-    labelOrigin: new google.maps.Point(75, 24)
+    labelOrigin: new google.maps.Point(16, 60)
    };
 
   var marker = new google.maps.Marker({

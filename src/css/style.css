@@ -213,7 +213,7 @@ body {
 
 .large-hero__search-box .checkin {
   min-height: 38px;
-  background: url("../assets/calendar-icon.png") 95% 6px no-repeat #fff; }
+  background: url("/static/assets/calendar-icon.png") 95% 6px no-repeat #fff; }
 
 .headline {
   font-size: 1.625rem;
@@ -232,11 +232,11 @@ body {
     left: 50%;
     bottom: -10px;
     transform: translateX(-50%);
-    background: url("../assets/headline-stripe.png") center center no-repeat; }
+    background: url("/static/assets/headline-stripe.png") center center no-repeat; }
   .headline--white {
     color: #fff; }
     .headline--white:after {
-      background: url("../assets/headline-stripe-white.png") center center no-repeat; }
+      background: url("/static/assets/headline-stripe-white.png") center center no-repeat; }
 
 .experiences__item {
   margin-bottom: 4em;
@@ -474,7 +474,7 @@ img.mfp-img {
     font-size: 0.875rem; }
   .listing .checkin {
     min-height: 38px;
-    background: url("../assets/calendar-icon.png") 95% 6px no-repeat #fff; }
+    background: url("/static/assets/calendar-icon.png") 95% 6px no-repeat #fff; }
   .listing input[type="submit"] {
     max-width: 100%; }
   .listing__info {
@@ -646,7 +646,7 @@ img.mfp-img {
     color: #000; }
   .activity__search-box .checkin {
     min-height: 38px;
-    background: url("../assets/calendar-icon.png") 95% 6px no-repeat #fff; }
+    background: url("/static/assets/calendar-icon.png") 95% 6px no-repeat #fff; }
   .activity__search-box input[type="submit"] {
     max-width: 100%; }
   .activity__search-box .timeslots label {

@@ -72,3 +72,7 @@ $('.input-group').on('click', '.button-plus', function(e) {
 $('.input-group').on('click', '.button-minus', function(e) {
   decrementValue(e);
 });
+
+$('.js-truncate').dotdotdot({
+  height: 72
+});
