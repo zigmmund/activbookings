@@ -50,7 +50,7 @@ select:-moz-focusring {
   font-weight: 700;
   font-style: normal; }
 
-.large-hero__search-box input[type="submit"], .listing input[type="submit"], .list-item__cta, .activity__search-box input[type="submit"], .testimonial__contact-form input[type="submit"], #customButton {
+.large-hero__search-box input[type="submit"], .listing input[type="submit"], .list-item__cta, .activity__search-box input[type="submit"], .testimonial__contact-form input[type="submit"], #customButton, .contacts__form input[type="submit"] {
   color: #fff;
   font-size: 0.8125rem;
   font-weight: 500;
@@ -65,7 +65,7 @@ select:-moz-focusring {
   background: linear-gradient(#01728d, #01508d);
   border-radius: 0.25rem;
   outline: none; }
-  .large-hero__search-box input[type="submit"]:not(:disabled):not(.disabled):active, .listing input[type="submit"]:not(:disabled):not(.disabled):active, .list-item__cta:not(:disabled):not(.disabled):active, .activity__search-box input[type="submit"]:not(:disabled):not(.disabled):active, .testimonial__contact-form input[type="submit"]:not(:disabled):not(.disabled):active, #customButton:not(:disabled):not(.disabled):active, .large-hero__search-box input[type="submit"]:not(:disabled):not(.disabled):active, .listing input[type="submit"]:not(:disabled):not(.disabled):active, .list-item__cta:not(:disabled):not(.disabled):active, .activity__search-box input[type="submit"]:not(:disabled):not(.disabled):active, .testimonial__contact-form input[type="submit"]:not(:disabled):not(.disabled):active, #customButton:not(:disabled):not(.disabled):active {
+  .large-hero__search-box input[type="submit"]:not(:disabled):not(.disabled):active, .listing input[type="submit"]:not(:disabled):not(.disabled):active, .list-item__cta:not(:disabled):not(.disabled):active, .activity__search-box input[type="submit"]:not(:disabled):not(.disabled):active, .testimonial__contact-form input[type="submit"]:not(:disabled):not(.disabled):active, #customButton:not(:disabled):not(.disabled):active, .contacts__form input[type="submit"]:not(:disabled):not(.disabled):active, .large-hero__search-box input[type="submit"]:not(:disabled):not(.disabled):active, .listing input[type="submit"]:not(:disabled):not(.disabled):active, .list-item__cta:not(:disabled):not(.disabled):active, .activity__search-box input[type="submit"]:not(:disabled):not(.disabled):active, .testimonial__contact-form input[type="submit"]:not(:disabled):not(.disabled):active, #customButton:not(:disabled):not(.disabled):active, .contacts__form input[type="submit"]:not(:disabled):not(.disabled):active {
     color: #fff;
     background: #01618d;
     background: linear-gradient(#01728d, #01508d);
@@ -1179,3 +1179,46 @@ img.mfp-img {
     @media (min-width: 992px) {
       .template__secondary .large-hero__text-content {
         top: 50%; } }
+
+.contacts {
+  padding: 50px 0;
+  background: #f7f7f7; }
+  .contacts__headline {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #014f8d;
+    margin: 0 0 1em; }
+  .contacts__details {
+    padding: 25px 0; }
+    .contacts__details img {
+      padding-right: .5rem; }
+    .contacts__details address {
+      display: inline; }
+    .contacts__details address,
+    .contacts__details a {
+      font-weight: 300;
+      color: #000; }
+    .contacts__details a {
+      margin-bottom: 1em; }
+      .contacts__details a:hover, .contacts__details a:focus {
+        text-decoration: none;
+        opacity: .6; }
+  .contacts h5 {
+    text-transform: uppercase;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: #000; }
+  .contacts p {
+    color: #000;
+    font-weight: 300;
+    margin: 1em 0; }
+  .contacts__form input,
+  .contacts__form textarea {
+    color: #808080;
+    font-weight: 300;
+    font-size: 1rem;
+    box-shadow: 2px 2px 2px 2px #eee;
+    border: 0; }
+  .contacts__form textarea {
+    resize: none; }
