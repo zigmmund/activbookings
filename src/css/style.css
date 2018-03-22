@@ -1218,7 +1218,7 @@ img.mfp-img {
     color: #808080;
     font-weight: 300;
     font-size: 1rem;
-    box-shadow: 2px 2px 2px 2px #eee;
+    box-shadow: 1px 1px 1px 1px #eee;
     border: 0; }
   .contacts__form textarea {
     resize: none; }
